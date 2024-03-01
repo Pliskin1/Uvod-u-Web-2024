@@ -1,0 +1,30 @@
+header {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+#lblEmail {
+  padding-right: 25px;
+}
+
+#textAreaField {
+  display: flex;
+  align-items: flex-start;
+}
+
+#sendButtonField {
+  display: flex;
+  align-self: flex-end;
+}
