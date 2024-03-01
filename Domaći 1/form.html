@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contact form</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="index.html">Portfolio</a>
+      <a href="#">|</a>
+      <a href="form.html">Contact</a>
+    </header>
+    <main>
+      <h2>Contact me</h2>
+      <form>
+        <p>
+          <label for="name">Full name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Type your full name here."
+          />
+        </p>
+        <p>
+          <label for="email" id="lblEmail">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Type your email here."
+          />
+        </p>
+        <p>
+          <label for="phoneNumber">Phone number:</label>
+          <input
+            type="number"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Type your number here."
+          />
+        </p>
+        <p id="textAreaField">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </p>
+        <p id="sendButtonField">
+          <button>Send</button>
+        </p>
+      </form>
+    </main>
+    <footer>&#169; Andrej Bošković</footer>
+  </body>
 </html>
