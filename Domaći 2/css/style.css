@@ -1,0 +1,47 @@
+* {
+  color: #404040;
+  font-family: "PT Serif";
+}
+
+body {
+  background-color: #faf7f2;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.newspaper-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.time {
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 8px 0;
+}
+
+.article-heading {
+  text-transform: uppercase;
+}
+
+.article-subheading {
+  text-transform: uppercase;
+}
+
+time {
+  background-color: #dddcda;
+  padding: 3px 0;
+}
+
+img {
+  filter: grayscale(1);
+}
+
+.upper-article {
+  column-count: 3;
+}
+.upper-article > p {
+  border-left: 1px solid black;
+}
