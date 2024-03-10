@@ -1,6 +1,6 @@
 * {
   color: #404040;
-  font-family: "PT Serif";
+  font-family: "Oswald";
 }
 
 body {
@@ -10,38 +10,119 @@ body {
 }
 
 .newspaper-title {
-  text-align: center;
   text-transform: uppercase;
+  font-size: 65px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .time {
-  text-align: center;
   text-transform: uppercase;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.time sup {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.author {
+  padding-left: 20px;
 }
 
 .article-heading {
   text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 0;
+  padding-left: 20px;
+  margin-top: 20px;
 }
 
 .article-subheading {
   text-transform: uppercase;
+  font-weight: 100;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 time {
   background-color: #dddcda;
-  padding: 3px 0;
+  padding: 0 0;
+  font-weight: bold;
 }
 
 img {
   filter: grayscale(1);
 }
 
-.upper-article {
+.columns-article {
   column-count: 3;
+  column-gap: 5px;
+  column-rule-style: solid;
+  margin-top: 25px;
+  text-align: justify;
+  padding: 0 20px;
 }
-.upper-article > p {
-  border-left: 1px solid black;
+.columns-article p {
+  padding: 0 20px;
+  hyphens: auto;
+}
+
+.columns-article .article-subheading {
+  padding: 0 20px;
+}
+
+blockquote {
+  width: 93%;
+  margin: 20px auto;
+  text-align: start;
+  font-size: 29px;
+  padding-left: 50px;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+img {
+  float: left;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  float: left;
+  padding: 10px;
+}
+
+figcaption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.article-list {
+  margin-top: 0;
+  list-style-type: none;
+}
+
+.list-icon {
+  padding-right: 5px;
 }
